@@ -5,24 +5,21 @@
  *     struct ListNode *next;
  * };
  */
-struct ListNode* deleteDuplicates(struct ListNode* head)
-{
-    struct ListNode*k=head;
-    struct ListNode*z;
+struct ListNode* deleteDuplicates(struct ListNode* head) {
+    struct ListNode* current=head;
     if(head==NULL)
-    return head;
-    int i;
-    for(i=0;i<5;i++)
-    {while(k->next!=NULL)
+    return NULL;
+    while(current->next !=NULL)
     {
-        z=k;
-        k=k->next;
-        if(z->val==k->val)
+        if(current->val==current->next->val)
         {
-            z->next=k->next;
+            struct ListNode* temp=current->next;
+            current->next=temp->next;
+            free(temp);
         }
+        else
+        current=current->next;
     }
-    k=head;
-}
     return head;
+    
 }
