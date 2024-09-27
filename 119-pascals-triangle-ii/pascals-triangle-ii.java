@@ -5,8 +5,6 @@ class Solution {
         int i=0;
         l2.add(1);
         l.add(l2);
-       // if(numRows==1)
-        //return l2;
         for(i=1;i<=numRows+1;i++)
         {
             int k=0;
