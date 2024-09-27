@@ -6,7 +6,7 @@ class Solution {
         int c=0;
         for(int i=0;i<seats.length;i++)
         {
-            c+=(Math.abs(seats[i]-students[i]));
+            c+=Math.abs(seats[i]-students[i]);
         }
         return c;
     }
