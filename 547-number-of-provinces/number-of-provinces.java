@@ -11,8 +11,7 @@ class Solution {
             for(int j=0;j<isConnected[0].length;j++)
             {
                 if(isConnected[i][j]==1)                
-                l.get(i+1).add(j+1);                  
-                          
+                l.get(i+1).add(j+1);
             }                      
             
         }
