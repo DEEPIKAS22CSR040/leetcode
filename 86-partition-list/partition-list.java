@@ -18,7 +18,7 @@ class Solution {
         List<Integer> l1 = new ArrayList<>();
         List<Integer> l2 = new ArrayList<>();
 
-        // Step 1: Traverse and split values into l1 and l2
+        
         while (temp != null) {
             if (temp.val < x)
                 l1.add(temp.val);
@@ -30,7 +30,7 @@ class Solution {
         ListNode head1 = null;
         ListNode tail = null;
 
-        // Step 2: Construct new linked list using l1
+       
         for (int i : l1) {
             ListNode newnode = new ListNode(i);
             if (head1 == null) {
@@ -42,10 +42,10 @@ class Solution {
             }
         }
 
-        // Step 3: Construct remaining linked list using l2
+       
         for (int i : l2) {
             ListNode newnode = new ListNode(i);
-            if (tail == null) { // If l1 was empty
+            if (tail == null) { 
                 head1 = newnode;
                 tail = newnode;
             } else {
