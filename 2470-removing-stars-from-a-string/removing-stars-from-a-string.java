@@ -7,8 +7,7 @@ class Solution {
             sb.append(ch);
             else
             {
-               int l=sb.length()-1;
-               sb.deleteCharAt(l);
+               sb.deleteCharAt(sb.length()-1);
             }
         
         }
