@@ -5,10 +5,8 @@ class Solution {
         {
             if(ch!='*')
             sb.append(ch);
-            else
-            {
-               sb.deleteCharAt(sb.length()-1);
-            }
+            else            
+            sb.deleteCharAt(sb.length()-1);           
         
         }
         return sb.toString();
