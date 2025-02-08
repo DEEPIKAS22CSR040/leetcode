@@ -24,21 +24,11 @@ class MinStack {
     }
     
     public int getMin() {
-        List<Integer> l=new ArrayList<>();
+        int min=Integer.MAX_VALUE;
         Iterator<Integer> v=s.iterator();
         while(v.hasNext())
-        l.add(v.next());
-        Collections.sort(l);
-        return l.get(0);
+        min=Math.min(min,v.next());
+        return min;
         
     }
 }
-
-/**
- * Your MinStack object will be instantiated and called as such:
- * MinStack obj = new MinStack();
- * obj.push(val);
- * obj.pop();
- * int param_3 = obj.top();
- * int param_4 = obj.getMin();
- */
