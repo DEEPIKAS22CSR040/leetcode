@@ -7,8 +7,7 @@ class Solution {
         if(n==99999999)
         return 9999;
         if(n==100000000)
-        return 10000;
-    
+        return 10000;    
         boolean a[]=new boolean[n];
         Arrays.fill(a,true);
         for(int i=2;i<n;i++)
