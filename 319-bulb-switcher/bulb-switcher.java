@@ -1,6 +1,6 @@
 class Solution {
     public int bulbSwitch(int n) {
-        if(n==0)
+        /*if(n==0)
         return 0;
         if(n==1)
         return 1;
@@ -23,6 +23,7 @@ class Solution {
             if(a[i])
             c++;
         }
-        return c;
+        return c;*/
+        return (int)Math.sqrt(n);
     }
 }
