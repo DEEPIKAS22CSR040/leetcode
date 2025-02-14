@@ -1,5 +1,5 @@
-/*class ProductOfNumbers {
-    List<Integer>l;
+class ProductOfNumbers {
+    ArrayList<Integer>l;
 
     public ProductOfNumbers() {
         l=new ArrayList<>();        
@@ -27,7 +27,7 @@
  * int param_2 = obj.getProduct(k);
  */
 
- class ProductOfNumbers
+ /*class ProductOfNumbers
 {
     // Step 1: Declare an ArrayList to store numbers.
     ArrayList<Integer> list; 
@@ -66,6 +66,6 @@
         // Step 9: Return the final product.
         return product; 
     }
-}
+}*/
  
 
