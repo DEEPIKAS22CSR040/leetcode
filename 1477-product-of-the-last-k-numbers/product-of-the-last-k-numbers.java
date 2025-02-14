@@ -10,8 +10,6 @@ class ProductOfNumbers {
     }
     
     public int getProduct(int k) {
-        if(k>l.size())
-        return 0;
         int x=1;
         for(int i=l.size()-k;i<l.size();i++)
         x*=l.get(i);        
