@@ -16,7 +16,7 @@ class Solution {
                 l.add(grid[i][j]);
             }
         }
-        long res=sum(n);
+        long res=(n*(n+1))/2;
         b=(int)(res-s);
         int arr[]=new int[2];
         arr[0]=a;
@@ -25,11 +25,6 @@ class Solution {
         
         
     }
-    long sum(long n)
-    {
-        if(n==0)
-        return 0;
-        return n+sum(n-1);
-    }
+    
 
 }
