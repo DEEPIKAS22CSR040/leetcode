@@ -17,12 +17,9 @@ class Solution {
         } 
         List<Integer>l=new ArrayList<>();
         for(int i=start;i<=end;i++)
-        {
-            if(isprime[i])
-            {
-                l.add(i);
-            }
-        } 
+        if(isprime[i])            
+        l.add(i);           
+        
         for(int i=1;i<l.size();i++)
         {
             if(l.get(i)-l.get(i-1) < min)
